@@ -1,0 +1,25 @@
+/* FONTS */
+@import url('../fonts/Popins/font.css');
+
+/* LIBRARIES */
+@import url('../js/Font-awesome-4.7.0/css/font-awesome.min.css');
+@import url('../css/swiper-bundle.min.css');
+
+/* Core variables*/
+@import './core/variables';
+@import './core/reset';
+@import './core/boostrap-clone';
+
+
+//Component
+@import './components/_common.scss';
+@import './components/_header.scss';
+@import './components/_breadcrumb';
+@import './components/_button.scss';
+@import './components/_bannerHero.scss';
+@import './components/_footer.scss';
+
+//Page
+@import './pages/_home.scss';
+@import './pages/_localization.scss';
+@import './pages/_find-us.scss';

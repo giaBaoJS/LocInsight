@@ -1,0 +1,16 @@
+$primary: #0575E6;
+$white: #ffffff;
+$black: #000000;
+$orange:#FD2F2E;
+
+/*Mixin*/
+@mixin media($point) {
+	@media screen and (max-width: $point) {
+		@content;
+	}
+}
+@mixin min-media($point) {
+    @media screen and (min-width: $point) {
+        @content;
+    }
+}

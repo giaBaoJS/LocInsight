@@ -1,0 +1,199 @@
+.footer {
+  overflow: hidden;
+  &__top {
+    background-image: linear-gradient(to right, #0575e6 0%, #021b79 100%);
+    color: $white;
+    .row {
+      align-items: center;
+      .col-4 {
+        width: 30%;
+      }
+      .col-8 {
+        width: 70%;
+      }
+      @include media(540px){
+        .col-4,.col-8{
+          width: 100%;
+        }
+        .col-4{
+          margin-bottom: 20px;
+        }
+      }
+    }
+    .sign-up {
+      font-size: 20px;
+      line-height: (44/20);
+      @include media(540px){
+        text-align: center;
+      }
+    }
+    .form {
+      font-size: 14px;
+      color: #9ab8e3;
+      &__inner {
+        display: flex;
+        width: 100%;
+        span {
+          position: relative;
+          input {
+            border: solid 1px #707070;
+            border-radius: 50px;
+            padding: 15px;
+            background-color: $white;
+            width: 100%;
+            &::placeholder {
+              color: #999999;
+            }
+          }
+          &:first-child {
+            width: 320px;
+            input {
+              padding-right: 73px;
+            }
+            @include media(1023px) {
+              width: 50%;
+            }
+            &::before {
+              position: absolute;
+              content: '';
+              right: 45px;
+              width: 1px;
+              height: 24px;
+              background: #e5e5e5;
+              top: 50%;
+              transform: translateY(-50%);
+              z-index: 10;
+            }
+          }
+          &:last-child {
+            width: calc(100% - 320px + 42px);
+            margin-left: -42px;
+            input {
+              padding-right: 200px;
+              border-top-left-radius: 0;
+              border-bottom-left-radius: 0;
+              border-left: none;
+            }
+            @include media(1023px) {
+              width: calc(50% + 42px);
+              input{
+                padding-right: 30px;
+              }
+            }
+          }
+        }
+      }
+      .subcribe {
+        position: relative;
+        .btn-main {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          right: 5px;
+          @include media(1023px) {
+            margin-top: 20px;
+            position: static;
+            top: unset;
+            transform: unset;
+            width: 100%;
+          }
+        }
+      }
+      .confirm-info {
+        margin-top: 12px;
+        display: flex;
+        align-items: center;
+        input {
+          margin-right: 10px;
+          width: 16px;
+          height: 16px;
+          background: white;
+          border-radius: 4px;
+        }
+        p {
+          width: calc(100% - 16px);
+          font-size: 12px;
+        }
+      }
+    }
+  }
+  &__bottom {
+    background-color: #4c4c4c;
+    color: $white;
+    &.space {
+      padding: 40px 0;
+    }
+    .row {
+      align-items: center;
+      justify-content: space-between;
+      .col-6 {
+        width: 50%;
+      }
+      @include media(540px){
+        .col-6{
+          width: 100%;
+        }
+      }
+    }
+    .content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      img {
+        width: 100%;
+        max-width: 230px;
+        height: 40px;
+      }
+      &__right {
+        color: #b7b7b7;
+      }
+      @include media(1024px){
+        flex-direction: column;
+        align-items: flex-start;
+        &__left{
+          margin-bottom: 20px;
+        }
+      }
+    }
+    .contact-us {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      margin: 0 -15px;
+      @include media(540px){
+        margin-top: 30px;
+        justify-content: flex-start;
+      }
+      .btn-main {
+        background-color: #707070;
+        border: none;
+        &:hover {
+          background-color: $primary;
+          color: $white;
+        }
+      }
+      .group-icon-social {
+        display: flex;
+        a {
+          margin-right: 15px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: $white;
+          width: 24px;
+          height: 24px;
+          border-radius: 100%;
+          background-color: #3b5998;
+          &:nth-child(2) {
+            background-color: #41a1f2;
+          }
+          &:last-child {
+            background-color: #2e78b6;
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
+}

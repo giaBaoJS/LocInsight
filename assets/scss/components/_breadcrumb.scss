@@ -1,0 +1,31 @@
+.breadcrumb {
+  background: #f8f8f8;
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px 0;
+    li {
+        position: relative;
+      a {
+        text-transform: uppercase;
+        color: #8e8e8e;
+        letter-spacing: 1.2px;
+        &:hover {
+          color: $primary;
+        }
+      }
+      &.active{
+          a{
+              color: $primary;
+          }
+      }
+      &:nth-child(n+2){
+          &::before{
+            content: '/';
+            margin: 0 15px;
+            color: #8e8e8e;
+          }
+      }
+    }
+  }
+}
