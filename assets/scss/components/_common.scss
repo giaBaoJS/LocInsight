@@ -156,6 +156,11 @@
   &.--normal{
     font-weight: normal;
   }
+  &.--custom{
+    padding-bottom: 15px;
+    border-bottom: 1px solid #CCCCCC;
+    margin-bottom: 30px;
+  }
 }
 .form-cm{
   width: 100%;
@@ -181,8 +186,18 @@
   color: #7f7f7f;
   line-height: (24/10);
   &.--red{
-    font-size: 12px;
+    display: block;
     color: #FD2F2E;
+  }
+  &.--custom{
+    font-size: 14px;
+    line-height: (44/14);
+  }
+  &.--up{
+    font-size: 12px;
+  }
+  &.--normal{
+    text-transform: unset;
   }
 }
 
@@ -196,5 +211,61 @@
   &.likes{
     color: $primary;
     margin-right: 24px;
+  }
+}
+//group icon social
+.group-icon-social {
+  display: flex;
+  a {
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $white;
+    width: 24px;
+    height: 24px;
+    border-radius: 100%;
+    background-color: #3b5998;
+    &:nth-child(2) {
+      background-color: #41a1f2;
+    }
+    &:last-child {
+      background-color: #2e78b6;
+      margin-right: 0;
+    }
+  }
+}
+
+//recent post
+.recent-post {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 -10px;
+  &:nth-child(n + 2) {
+    margin-top: 15px;
+  }
+  .col {
+    padding: 0 10px;
+  }
+  &__left {
+    width: 90px;
+    img {
+      border-radius: 5px;
+      box-shadow: 6px 6px 16px 0 rgba(0, 0, 0, 0.16);
+    }
+  }
+  &__right {
+    width: calc(100% - 90px);
+    .recent-title {
+      font-size: 14px;
+      line-height: (20/14);
+      margin-bottom: 3px;
+    }
+    .date {
+      display: block;
+      color: $orange;
+      font-size: 10px;
+    }
   }
 }

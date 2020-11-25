@@ -1,9 +1,243 @@
-.home__language {
+.home__lastest-post {
+  background-color: #efefef;
   .title-cm {
-    padding-bottom: 16px;
-    border-bottom: 1px solid #cccccc;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
   }
+  .row {
+    .col-3 {
+      width: calc(100% / 12 * 3);
+      @include media(1023px){
+        width: 50%;
+        &:nth-child(n+3){
+          margin-top: 20px;
+        }
+      }
+      @include media(540px){
+        width: 100%;
+        &:nth-child(n+1){
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+  .wrap__lasted-post {
+    position: relative;
+    border-radius: 5px;
+    padding: 20px 30px;
+    transition: 0.5s all;
+    .lasted-post {
+      position: relative;
+      z-index: 10;
+      display: flex;
+      margin: 0 -15px;
+      @include media(540px){
+        flex-wrap: wrap;
+      }
+      .left {
+        position: relative;
+        color: #909090;
+        font-size: 23px;
+        line-height: (44/23);
+        &::after {
+          content: '';
+          position: absolute;
+          width: 1px;
+          height: 100%;
+          right: 0;
+          background: #e2e2e2;
+          @include media(1023px){
+            content: none;
+          }
+        }
+      }
+      .right {
+        .type-post {
+          display: block;
+          font-size: 10px;
+          text-transform: uppercase;
+          font-weight: bold;
+          color: #909090;
+          margin-bottom: 6px;
+        }
+        .title-cm {
+          font-size: 16px;
+          line-height: (20/16);
+          margin-bottom: 7px;
+        }
+        .date-cm {
+          line-height: unset;
+        }
+      }
+    }
+    .image-overlay {
+      border-radius: 5px;
+      position: absolute;
+      width: 0;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      transition: 0.5s all;
+      background-size: cover;
+      background-position: center center;
+      box-shadow: 10px 10px 30px 0 rgba(0, 0, 0, 0.16);
+      &::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 0;
+        height: 100%;
+        width: 100%;
+        background-color: $black;
+        opacity: 0.6;
+        border-radius: 5px;
+      }
+    }
+    &:hover{
+      .lasted-post{
+        .left{
+          color: $white;
+        }
+        .right{
+          .title-cm{
+           a{
+             color: $white;
+           }
+          }
+        }
+      }
+      .image-overlay{
+        width: 100%;
+      }
+    }
+  }
+}
+.home__localization {
+  .row {
+    .col-9 {
+      width: calc(100% / 12 * 9);
+    }
+    .col-3 {
+      width: calc(100% / 12 * 3);
+    }
+    @include media(1023px){
+      .col-9{
+        margin-bottom: 30px;
+      }
+      .col-9,.col-3{
+        width: 100%;
+      }
+    }
+  }
+  .list-localization {
+    margin-top: 30px;
+    padding-right: 15px;
+    border-right: 1px solid #cccccc;
+    .items-lc {
+      &:nth-child(n + 2) {
+        margin-top: 30px;
+      }
+      &__right-title {
+        font-size: 18px;
+        margin-bottom: 15px;
+      }
+    }
+  }
+  .subscription {
+    border-radius: 5px;
+    padding: 65px 20px;
+    background-color: #f8f8f8;
+    box-shadow: 10px 10px 30px 0 rgba(0, 0, 0, 0.16);
+    text-align: center;
+    img {
+      margin-bottom: 16px;
+    }
+    .title-cm {
+      margin-bottom: 22px;
+    }
+    &__describe {
+      font-size: 14px;
+      color: #7b7b7b;
+      margin-bottom: 21px;
+      line-height: (20/14);
+    }
+    &__form {
+      font-size: 14px;
+      position: relative;
+      input {
+        width: 100%;
+        background-color: $white;
+        padding: 15px 40px 15px 20px;
+        border-radius: 50px;
+        transition: 0.3s all;
+        border: 1px solid transparent;
+        color: #b2b2b2;
+        &::placeholder {
+          color: #b2b2b2;
+        }
+        &:focus {
+          border-color: $primary;
+        }
+      }
+      button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 20px;
+        i {
+          color: $primary;
+        }
+      }
+    }
+  }
+}
+.home__translation {
+  background-image: linear-gradient(to right, #0575e6 0%, #021b79 100%);
+  color: $white;
+  .row {
+    .col-8 {
+      width: calc(100% / 12 * 8);
+    }
+    .col-4 {
+      width: calc(100% / 12 * 4);
+    }
+    @include media(1023px){
+      .col-8,.col-4{
+        width: 100%;
+      }
+      .col-8{
+        margin-bottom: 30px;
+      }
+    }
+  }
+  .list-translation {
+    .title-cm {
+      padding-bottom: 15px;
+      border-bottom: 1px solid #3563b4;
+      margin-bottom: 30px;
+    }
+  }
+  .list-recent-post {
+    padding-right: 15px;
+    border-right: 1px solid #3563b4;
+    .wrap-bd {
+      border-bottom: 1px solid #3563b4;
+      padding-bottom: 20px;
+      &:last-child {
+        border-bottom: none;
+      }
+      &:nth-child(n + 2) {
+        margin-top: 20px;
+      }
+    }
+    .recent-post {
+      .recent-title {
+        color: $white;
+      }
+    }
+  }
+}
+.home__language {
   .list-language {
     position: relative;
     padding-bottom: 38px;
@@ -37,11 +271,11 @@
       &:nth-child(n + 4) {
         margin-top: 40px;
       }
-      @include media(540px){
-          width: 100%;
-          &:nth-child(n + 2) {
-            margin-top: 30px;
-          }
+      @include media(540px) {
+        width: 100%;
+        &:nth-child(n + 2) {
+          margin-top: 30px;
+        }
       }
     }
   }
@@ -56,14 +290,30 @@
       line-height: (20/18);
       font-weight: normal;
       margin-bottom: 15px;
-      @include media(768px){
-          font-size: 16px;
+      @include media(768px) {
+        font-size: 16px;
       }
     }
     &__describe {
       color: #7f7f7f;
       line-height: (20/12);
       margin-bottom: 12px;
+    }
+  }
+}
+.news-hightlight {
+  .items {
+    border-radius: 5px;
+    padding: 360px 30px 30px 30px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 6px 6px 16px 0 rgba(0, 0, 0, 0.16);
+    .content {
+      .title-cm {
+        color: $black;
+        background-color: $white;
+      }
     }
   }
 }
