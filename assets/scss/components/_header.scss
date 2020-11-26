@@ -131,8 +131,10 @@
     background-image: linear-gradient(to right, #0575e6 0%, #021b79 100%);
     .main-header {
       position: relative;
+      border-bottom:  1px solid rgba(255, 255, 255,0.2);
       @include media(1200px) {
         padding: 10px 0;
+        border-bottom: none;
       }
       .isner {
         display: -webkit-box;
@@ -273,8 +275,6 @@
                   position: relative;
                   line-height: 1.33;
                   font-weight: bold;
-                  display: -webkit-box;
-                  display: -ms-flexbox;
                   display: flex;
                   -webkit-box-pack: center;
                   -ms-flex-pack: center;
@@ -283,6 +283,7 @@
                   -ms-flex-align: center;
                   align-items: center;
                   border-bottom: 1px solid transparent;
+                  margin-bottom: -1px;
                   i {
                     @include min-media(1200px) {
                       pointer-events: none;
@@ -325,6 +326,7 @@
                     -webkit-box-pack: justify;
                     -ms-flex-pack: justify;
                     justify-content: flex-start;
+                    margin-bottom: 0;
                   }
                 }
                 &.current-menu-item,
@@ -513,7 +515,7 @@
             color: $white;
             width: 270px;
             padding: 10px 40px 10px 20px ;
-            border: 1px solid #cdd7eb;
+            border: 1px solid rgba(255, 255, 255, 0.8);
             border-radius: 50px;
             &::placeholder {
               color: #6888c4;
