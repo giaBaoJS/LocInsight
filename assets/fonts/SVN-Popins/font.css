@@ -1,0 +1,234 @@
+@font-face {
+    font-family: 'SVN-Poppins';
+    src: url('SVN-PoppinsBlackItalic.eot');
+    src: url('SVN-PoppinsBlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('SVN-PoppinsBlackItalic.woff2') format('woff2'),
+        url('SVN-PoppinsBlackItalic.woff') format('woff'),
+        url('SVN-PoppinsBlackItalic.ttf') format('truetype'),
+        url('SVN-PoppinsBlackItalic.svg#SVN-PoppinsBlackItalic') format('svg');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SVN-Poppins';
+    src: url('SVN-PoppinsBoldItalic.eot');
+    src: url('SVN-PoppinsBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('SVN-PoppinsBoldItalic.woff2') format('woff2'),
+        url('SVN-PoppinsBoldItalic.woff') format('woff'),
+        url('SVN-PoppinsBoldItalic.ttf') format('truetype'),
+        url('SVN-PoppinsBoldItalic.svg#SVN-PoppinsBoldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SVN-Poppins';
+    src: url('SVN-PoppinsBlack.eot');
+    src: url('SVN-PoppinsBlack.eot?#iefix') format('embedded-opentype'),
+        url('SVN-PoppinsBlack.woff2') format('woff2'),
+        url('SVN-PoppinsBlack.woff') format('woff'),
+        url('SVN-PoppinsBlack.ttf') format('truetype'),
+        url('SVN-PoppinsBlack.svg#SVN-PoppinsBlack') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SVN-Poppins';
+    src: url('SVN-PoppinsBold.eot');
+    src: url('SVN-PoppinsBold.eot?#iefix') format('embedded-opentype'),
+        url('SVN-PoppinsBold.woff2') format('woff2'),
+        url('SVN-PoppinsBold.woff') format('woff'),
+        url('SVN-PoppinsBold.ttf') format('truetype'),
+        url('SVN-PoppinsBold.svg#SVN-PoppinsBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SVN-Poppins';
+    src: url('SVN-PoppinsExtraBoldItalic.eot');
+    src: url('SVN-PoppinsExtraBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('SVN-PoppinsExtraBoldItalic.woff2') format('woff2'),
+        url('SVN-PoppinsExtraBoldItalic.woff') format('woff'),
+        url('SVN-PoppinsExtraBoldItalic.ttf') format('truetype'),
+        url('SVN-PoppinsExtraBoldItalic.svg#SVN-PoppinsExtraBoldItalic') format('svg');
+    font-weight: 800;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SVN-Poppins';
+    src: url('SVN-PoppinsExtraBold.eot');
+    src: url('SVN-PoppinsExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('SVN-PoppinsExtraBold.woff2') format('woff2'),
+        url('SVN-PoppinsExtraBold.woff') format('woff'),
+        url('SVN-PoppinsExtraBold.ttf') format('truetype'),
+        url('SVN-PoppinsExtraBold.svg#SVN-PoppinsExtraBold') format('svg');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SVN-Poppins';
+    src: url('SVN-PoppinsExtraLightItalic.eot');
+    src: url('SVN-PoppinsExtraLightItalic.eot?#iefix') format('embedded-opentype'),
+        url('SVN-PoppinsExtraLightItalic.woff2') format('woff2'),
+        url('SVN-PoppinsExtraLightItalic.woff') format('woff'),
+        url('SVN-PoppinsExtraLightItalic.ttf') format('truetype'),
+        url('SVN-PoppinsExtraLightItalic.svg#SVN-PoppinsExtraLightItalic') format('svg');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SVN-Poppins';
+    src: url('SVN-PoppinsLightItalic.eot');
+    src: url('SVN-PoppinsLightItalic.eot?#iefix') format('embedded-opentype'),
+        url('SVN-PoppinsLightItalic.woff2') format('woff2'),
+        url('SVN-PoppinsLightItalic.woff') format('woff'),
+        url('SVN-PoppinsLightItalic.ttf') format('truetype'),
+        url('SVN-PoppinsLightItalic.svg#SVN-PoppinsLightItalic') format('svg');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SVN-Poppins';
+    src: url('SVN-PoppinsExtraLight.eot');
+    src: url('SVN-PoppinsExtraLight.eot?#iefix') format('embedded-opentype'),
+        url('SVN-PoppinsExtraLight.woff2') format('woff2'),
+        url('SVN-PoppinsExtraLight.woff') format('woff'),
+        url('SVN-PoppinsExtraLight.ttf') format('truetype'),
+        url('SVN-PoppinsExtraLight.svg#SVN-PoppinsExtraLight') format('svg');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SVN-Poppins';
+    src: url('SVN-PoppinsItalic.eot');
+    src: url('SVN-PoppinsItalic.eot?#iefix') format('embedded-opentype'),
+        url('SVN-PoppinsItalic.woff2') format('woff2'),
+        url('SVN-PoppinsItalic.woff') format('woff'),
+        url('SVN-PoppinsItalic.ttf') format('truetype'),
+        url('SVN-PoppinsItalic.svg#SVN-PoppinsItalic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SVN-Poppins';
+    src: url('SVN-PoppinsSemiBoldItalic.eot');
+    src: url('SVN-PoppinsSemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('SVN-PoppinsSemiBoldItalic.woff2') format('woff2'),
+        url('SVN-PoppinsSemiBoldItalic.woff') format('woff'),
+        url('SVN-PoppinsSemiBoldItalic.ttf') format('truetype'),
+        url('SVN-PoppinsSemiBoldItalic.svg#SVN-PoppinsSemiBoldItalic') format('svg');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SVN-Poppins';
+    src: url('SVN-PoppinsMediumItalic.eot');
+    src: url('SVN-PoppinsMediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('SVN-PoppinsMediumItalic.woff2') format('woff2'),
+        url('SVN-PoppinsMediumItalic.woff') format('woff'),
+        url('SVN-PoppinsMediumItalic.ttf') format('truetype'),
+        url('SVN-PoppinsMediumItalic.svg#SVN-PoppinsMediumItalic') format('svg');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SVN-Poppins';
+    src: url('SVN-PoppinsMedium.eot');
+    src: url('SVN-PoppinsMedium.eot?#iefix') format('embedded-opentype'),
+        url('SVN-PoppinsMedium.woff2') format('woff2'),
+        url('SVN-PoppinsMedium.woff') format('woff'),
+        url('SVN-PoppinsMedium.ttf') format('truetype'),
+        url('SVN-PoppinsMedium.svg#SVN-PoppinsMedium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SVN-Poppins';
+    src: url('SVN-PoppinsLight.eot');
+    src: url('SVN-PoppinsLight.eot?#iefix') format('embedded-opentype'),
+        url('SVN-PoppinsLight.woff2') format('woff2'),
+        url('SVN-PoppinsLight.woff') format('woff'),
+        url('SVN-PoppinsLight.ttf') format('truetype'),
+        url('SVN-PoppinsLight.svg#SVN-PoppinsLight') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SVN-Poppins';
+    src: url('SVN-Poppins.eot');
+    src: url('SVN-Poppins.eot?#iefix') format('embedded-opentype'),
+        url('SVN-Poppins.woff2') format('woff2'),
+        url('SVN-Poppins.woff') format('woff'),
+        url('SVN-Poppins.ttf') format('truetype'),
+        url('SVN-Poppins.svg#SVN-Poppins') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SVN-Poppins';
+    src: url('SVN-PoppinsSemiBold.eot');
+    src: url('SVN-PoppinsSemiBold.eot?#iefix') format('embedded-opentype'),
+        url('SVN-PoppinsSemiBold.woff2') format('woff2'),
+        url('SVN-PoppinsSemiBold.woff') format('woff'),
+        url('SVN-PoppinsSemiBold.ttf') format('truetype'),
+        url('SVN-PoppinsSemiBold.svg#SVN-PoppinsSemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SVN-Poppins';
+    src: url('SVN-PoppinsThinItalic.eot');
+    src: url('SVN-PoppinsThinItalic.eot?#iefix') format('embedded-opentype'),
+        url('SVN-PoppinsThinItalic.woff2') format('woff2'),
+        url('SVN-PoppinsThinItalic.woff') format('woff'),
+        url('SVN-PoppinsThinItalic.ttf') format('truetype'),
+        url('SVN-PoppinsThinItalic.svg#SVN-PoppinsThinItalic') format('svg');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SVN-Poppins';
+    src: url('SVN-PoppinsThin.eot');
+    src: url('SVN-PoppinsThin.eot?#iefix') format('embedded-opentype'),
+        url('SVN-PoppinsThin.woff2') format('woff2'),
+        url('SVN-PoppinsThin.woff') format('woff'),
+        url('SVN-PoppinsThin.ttf') format('truetype'),
+        url('SVN-PoppinsThin.svg#SVN-PoppinsThin') format('svg');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
