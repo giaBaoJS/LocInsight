@@ -19,6 +19,9 @@
     .information {
       padding-right: 0;
       padding-left: 35px;
+      @include media(1023px){
+        padding-left: 0
+      }
     }
   }
   &:last-child {
@@ -70,11 +73,18 @@
   }
   &__bot {
     .row {
+      margin: 0 -5px;
       .col-12 {
         width: 100%;
       }
       .col-6 {
         width: 50%;
+        @include media(540px){
+          width: 100%;
+        }
+      }
+      .col{
+        padding: 0 5px;
       }
     }
     .form-cm {

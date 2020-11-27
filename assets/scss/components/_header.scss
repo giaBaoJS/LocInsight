@@ -87,7 +87,6 @@
       border-bottom:  1px solid rgba(255, 255, 255,0.2);
       @include media(1200px) {
         padding: 10px 0;
-        border-bottom: none;
       }
       .isner {
         display: -webkit-box;
@@ -192,7 +191,7 @@
               -webkit-transition: 0.5s;
               -o-transition: 0.5s;
               transition: 0.5s;
-              z-index: 998;
+              z-index: 99;
             }
             &.active {
               right: 0;
@@ -268,7 +267,7 @@
                   }
                   @include media(1200px) {
                     color: $white;
-                    padding: 12px 14px;
+                    padding: 20px 14px;
                     border-bottom: 1px solid $white;
                     display: -webkit-box;
                     display: -ms-flexbox;
@@ -479,9 +478,11 @@
           }
           button {
             position: absolute;
+            height: 37px;
+            width: 45px;
             top: 50%;
             transform: translateY(-50%);
-            right: 15px;
+            right: 0;
             font-size: 16px;
             color: #6888c4;
             transition: 0.3s all;

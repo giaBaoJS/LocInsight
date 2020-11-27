@@ -4,22 +4,22 @@
     .col-8 {
       width: calc(100% / 12 * 8);
       border-right: 1px solid #cccccc;
-      &.col{
+      &.col {
         padding: 0 30px;
       }
     }
     .col-4 {
       width: calc(100% / 12 * 4);
-      &.col{
+      &.col {
         padding: 0 30px;
       }
     }
-    
-    @include media(1024px){
+
+    @include media(1024px) {
       margin: 0 -15px;
       .col-8,
       .col-4 {
-        &.col{
+        &.col {
           padding: 0 15px;
         }
       }
@@ -53,18 +53,23 @@
 
   &__left {
     width: 300px;
-    a {
-      display: block;
+    border-radius: 5px;
+    .wrap__image {
+      overflow: hidden;
+      box-shadow: 6px 6px 16px 0 rgba(0, 0, 0, 0.16);
+      border-radius: 5px;
     }
     img {
       border-radius: 5px;
-      box-shadow: 6px 6px 16px 0 rgba(0, 0, 0, 0.16);
+      transition: 0.5s all;
+      &:hover {
+        transform: scale(1.2);
+      }
     }
   }
   &__right {
     width: calc(100% - 300px);
     &-title {
-      display: block;
       font-size: 15px;
       margin-bottom: 18px;
       line-height: 1.33;
@@ -158,9 +163,11 @@
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
-      right: 20px;
+      right: 0px;
       font-size: 16px;
       color: $primary;
+      width: 47px;
+      height: 47px;
     }
   }
   .group-social {
@@ -268,7 +275,7 @@
       margin-top: 15px;
     }
   }
-  .seemore{
+  .seemore {
     margin-top: 12px;
     text-align: center;
   }
