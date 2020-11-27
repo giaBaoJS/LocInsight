@@ -5,7 +5,7 @@
 @import url("../js/Font-awesome-4.7.0/css/font-awesome.min.css");
 @import url("../css/swiper-bundle.min.css");
 @import url("../css/animate.css");
-/* Core variables*/
+/* Core */
 /*Mixin*/
 * {
   margin: 0;
@@ -540,27 +540,6 @@ button {
 }
 .header__topbar-right ul li a:hover i {
   color: #ffffff;
-}
-.header__topbar.--eng {
-  background-color: #1e3461;
-  color: #ffffff;
-}
-.header__topbar.--eng .header__topbar-left p span {
-  font-weight: normal;
-}
-.header__topbar.--eng .header__topbar-right ul li a {
-  border-color: #ffffff;
-  color: #ffffff;
-}
-.header__topbar.--eng .header__topbar-right ul li a i {
-  color: #ffffff;
-}
-.header__topbar.--eng .header__topbar-right ul li a:hover {
-  border-color: #1e3461;
-  background-color: #ffffff;
-}
-.header__topbar.--eng .header__topbar-right ul li a:hover i {
-  color: #1e3461;
 }
 .header__menu {
   background-image: -webkit-gradient(linear, left top, right top, from(#0575e6), to(#021b79));
@@ -1511,13 +1490,13 @@ button {
   background-color: #ffffff;
 }
 
-.home__test {
+.home__top {
   background-image: -webkit-gradient(linear, left top, right top, from(#0575e6), to(#021b79));
   background-image: linear-gradient(to right, #0575e6 0%, #021b79 100%);
   height: 420px;
 }
 @media screen and (max-width: 1023px) {
-  .home__test {
+  .home__top {
     height: unset;
     padding: 50px 0;
   }
