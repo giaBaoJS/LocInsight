@@ -330,7 +330,9 @@
     }
     .recent-post {
       .recent-title {
-        color: $white;
+        a{
+          color: $white;
+        }
       }
     }
   }

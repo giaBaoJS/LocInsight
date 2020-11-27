@@ -859,7 +859,7 @@ button {
     padding: 0;
   }
   .header__menu .main-header .isner .right .main-menu-nav li .submenu li a {
-    padding: 12px 14px;
+    padding: 20px 14px;
     padding-left: 18px;
     color: #0575E6;
     border-bottom: none;
@@ -1724,7 +1724,7 @@ button {
 .home__translation .list-recent-post .wrap-bd:nth-child(n + 2) {
   margin-top: 20px;
 }
-.home__translation .list-recent-post .recent-post .recent-title {
+.home__translation .list-recent-post .recent-post .recent-title a {
   color: #ffffff;
 }
 
